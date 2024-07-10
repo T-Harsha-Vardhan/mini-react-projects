@@ -4,19 +4,17 @@ import "./accordion.css";
 import { FaMinus, FaPlus } from "react-icons/fa";
 
 const Accordion = () => {
-  const [singleSelection, setSingleSelection] = useState(true);
   const [multiSelection, setMultiSelection] = useState(false);
 
   const [itemId, setItemId] = useState([]);
 
   const handleEnableBtn = () => {
     setItemId([]);
-    setSingleSelection((prev) => !prev);
     setMultiSelection((prev) => !prev);
   };
 
   const handleExpand = (id) => {
-    if (singleSelection) {
+    if (!multiSelection) {
       setItemId([id]);
     } else if (multiSelection) {
       setItemId((prev) => [...prev, id]);
@@ -24,7 +22,7 @@ const Accordion = () => {
   };
 
   const handleShrink = (id) => {
-    if (singleSelection) {
+    if (!multiSelection) {
       setItemId([]);
     } else if (multiSelection) {
       setItemId((prev) => prev.filter((prevVal) => prevVal !== id));
