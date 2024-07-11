@@ -7,6 +7,7 @@ const HomePage = () => {
       <h1>25 Mini React Projects</h1>
       <div className="projects">
         <Link to="/accordion">Accordion</Link>
+        <Link to="/starRating">Star Rating</Link>
       </div>
     </div>
   );
