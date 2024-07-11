@@ -8,6 +8,7 @@ const HomePage = () => {
       <div className="projects">
         <Link to="/accordion">Accordion</Link>
         <Link to="/starRating">Star Rating</Link>
+        <Link to="/imageSlider">Image Slider</Link>
       </div>
     </div>
   );
