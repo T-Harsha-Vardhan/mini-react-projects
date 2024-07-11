@@ -7,14 +7,26 @@ import { FaArrowLeft, FaArrowRight } from "react-icons/fa";
 const ImageSlider = ({ limit = 5, page = 1 }) => {
   const [images, setImages] = useState(null);
   const [imageIndex, setImageIndex] = useState(0);
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
+    setLoading(true);
+    setError(null);
     const fetchImages = async () => {
-      const res = await fetch(
-        `https://picsum.photos/v2/list?page=${page}&limit=${limit}`
-      );
-      const data = await res.json();
-      setImages(data);
+      try {
+        const res = await fetch(
+          `https://picsum.photos/v2/list?page=${page}&limit=${limit}`
+        );
+        const data = await res.json();
+        setImages(data);
+        setTimeout(() => {
+          setLoading(false);
+        }, 2000);
+      } catch (error) {
+        setLoading(false);
+        setError(error.message);
+      }
     };
 
     fetchImages();
@@ -36,22 +48,28 @@ const ImageSlider = ({ limit = 5, page = 1 }) => {
 
   return (
     <div id="image-slider">
-      <div className="wrapper">
-        <FaArrowLeft className="left-arrow" onClick={handleLeft} />
-        <img src={images && images[imageIndex]?.download_url} alt="" />
-        <FaArrowRight className="right-arrow" onClick={handleRight} />
-        <div className="dots">
-          {images?.map((_, idx) => (
-            <>
-              <div
-                className={imageIndex === idx ? "dot dot-active" : "dot"}
-                key={idx}
-                onClick={() => handleDot(idx)}
-              ></div>
-            </>
-          ))}
+      {loading ? (
+        <p>Loading...</p>
+      ) : !error ? (
+        <div className="wrapper">
+          <FaArrowLeft className="left-arrow" onClick={handleLeft} />
+          <img src={images && images[imageIndex]?.download_url} alt="" />
+          <FaArrowRight className="right-arrow" onClick={handleRight} />
+          <div className="dots">
+            {images?.map((_, idx) => (
+              <>
+                <div
+                  className={imageIndex === idx ? "dot dot-active" : "dot"}
+                  key={idx}
+                  onClick={() => handleDot(idx)}
+                ></div>
+              </>
+            ))}
+          </div>
         </div>
-      </div>
+      ) : (
+        <p>{error}</p>
+      )}
     </div>
   );
 };
