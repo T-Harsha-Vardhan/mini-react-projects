@@ -9,6 +9,7 @@ const HomePage = () => {
         <Link to="/accordion">Accordion</Link>
         <Link to="/starRating">Star Rating</Link>
         <Link to="/imageSlider">Image Slider</Link>
+        <Link to="/loadMore">Load More</Link>
       </div>
     </div>
   );
