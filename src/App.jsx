@@ -4,6 +4,7 @@ import Accordion from "./pages/accordion/Accordion";
 import StarRating from "./pages/starRating/StarRating";
 import ImageSlider from "./pages/imageSlider/ImageSlider";
 import LoadMore from "./pages/loadMore/LoadMore";
+import RecursiveNavMenu from "./pages/recursiveNavMenu/RecursiveNavMenu";
 
 const App = () => {
   return (
@@ -15,6 +16,7 @@ const App = () => {
           <Route path="/starRating" element={<StarRating />} />
           <Route path="/imageSlider" element={<ImageSlider />} />
           <Route path="/loadMore" element={<LoadMore />} />
+          <Route path="/recursiveNavMenu" element={<RecursiveNavMenu />} />
         </Routes>
       </Router>
     </>

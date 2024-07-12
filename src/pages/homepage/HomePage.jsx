@@ -10,6 +10,7 @@ const HomePage = () => {
         <Link to="/starRating">Star Rating</Link>
         <Link to="/imageSlider">Image Slider</Link>
         <Link to="/loadMore">Load More</Link>
+        <Link to="/recursiveNavMenu">Recursive Nav Menu</Link>
       </div>
     </div>
   );
