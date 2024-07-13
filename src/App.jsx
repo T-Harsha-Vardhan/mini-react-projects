@@ -6,6 +6,7 @@ import ImageSlider from "./pages/imageSlider/ImageSlider";
 import LoadMore from "./pages/loadMore/LoadMore";
 import RecursiveNavMenu from "./pages/recursiveNavMenu/RecursiveNavMenu";
 import QrCodeGenerator from "./pages/qrCodeGenerator/QrCodeGenerator";
+import ThemeChanger from "./pages/themeChanger/ThemeChanger";
 
 const App = () => {
   return (
@@ -19,6 +20,7 @@ const App = () => {
           <Route path="/loadMore" element={<LoadMore />} />
           <Route path="/recursiveNavMenu" element={<RecursiveNavMenu />} />
           <Route path="/qrCodeGenerator" element={<QrCodeGenerator />} />
+          <Route path="/themeChanger" element={<ThemeChanger />} />
         </Routes>
       </Router>
     </>
