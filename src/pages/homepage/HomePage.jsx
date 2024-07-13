@@ -11,6 +11,7 @@ const HomePage = () => {
         <Link to="/imageSlider">Image Slider</Link>
         <Link to="/loadMore">Load More</Link>
         <Link to="/recursiveNavMenu">Recursive Nav Menu</Link>
+        <Link to="/qrCodeGenerator">QR Code Generator</Link>
       </div>
     </div>
   );
