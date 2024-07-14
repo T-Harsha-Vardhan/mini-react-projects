@@ -14,6 +14,7 @@ const HomePage = () => {
         <Link to="/qrCodeGenerator">QR Code Generator</Link>
         <Link to="/themeChanger">Theme Changer</Link>
         <Link to="/scrollIndicator">Scroll Indicator</Link>
+        <Link to="/customTabs">Custom Tabs</Link>
       </div>
     </div>
   );

@@ -8,6 +8,7 @@ import RecursiveNavMenu from "./pages/recursiveNavMenu/RecursiveNavMenu";
 import QrCodeGenerator from "./pages/qrCodeGenerator/QrCodeGenerator";
 import ThemeChanger from "./pages/themeChanger/ThemeChanger";
 import ScrollIndicator from "./pages/scrollIndicator/ScrollIndicator";
+import CustomTabs from "./pages/customTabs/CustomTabs";
 
 const App = () => {
   return (
@@ -23,6 +24,7 @@ const App = () => {
           <Route path="/qrCodeGenerator" element={<QrCodeGenerator />} />
           <Route path="/themeChanger" element={<ThemeChanger />} />
           <Route path="/scrollIndicator" element={<ScrollIndicator />} />
+          <Route path="/customTabs" element={<CustomTabs />} />
         </Routes>
       </Router>
     </>

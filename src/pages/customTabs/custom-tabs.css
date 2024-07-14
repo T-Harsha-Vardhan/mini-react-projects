@@ -1,0 +1,28 @@
+#custom-tabs {
+  height: 100vh;
+  width: 100vw;
+  background-color: #b8b8ff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  .header {
+    display: flex;
+    margin-bottom: 48px;
+    h2 {
+      margin-left: 16px;
+      padding: 16px;
+      background-color: #9381ff;
+      color: #f8f7ff;
+      border-radius: 16px;
+      cursor: pointer;
+    }
+  }
+
+  .content {
+    font-size: 48px;
+    font-weight: 900;
+    color: #f8f7ff;
+  }
+}
