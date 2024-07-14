@@ -13,6 +13,7 @@ const HomePage = () => {
         <Link to="/recursiveNavMenu">Recursive Nav Menu</Link>
         <Link to="/qrCodeGenerator">QR Code Generator</Link>
         <Link to="/themeChanger">Theme Changer</Link>
+        <Link to="/scrollIndicator">Scroll Indicator</Link>
       </div>
     </div>
   );

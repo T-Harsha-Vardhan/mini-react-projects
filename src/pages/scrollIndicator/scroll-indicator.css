@@ -1,0 +1,10 @@
+#scroll-indicator {
+  position: relative;
+  .progress-bar {
+    background-color: chartreuse;
+    height: 24px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+  }
+}
