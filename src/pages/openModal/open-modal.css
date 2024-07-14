@@ -1,0 +1,43 @@
+#open-modal {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .modal {
+    background-color: #dbe4ee;
+    color: white;
+    width: 50%;
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px;
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      width: 100%;
+
+      h2 {
+        margin-right: 16px;
+        justify-self: center;
+        font-size: 40px;
+      }
+
+      svg {
+        cursor: pointer;
+      }
+    }
+
+    .modal-content {
+      font-size: 40px;
+    }
+
+    h3 {
+      font-size: 40px;
+    }
+  }
+}

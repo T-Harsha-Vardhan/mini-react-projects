@@ -15,6 +15,7 @@ const HomePage = () => {
         <Link to="/themeChanger">Theme Changer</Link>
         <Link to="/scrollIndicator">Scroll Indicator</Link>
         <Link to="/customTabs">Custom Tabs</Link>
+        <Link to="/openModal">Open Modal</Link>
       </div>
     </div>
   );

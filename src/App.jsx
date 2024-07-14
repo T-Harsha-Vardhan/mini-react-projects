@@ -9,6 +9,7 @@ import QrCodeGenerator from "./pages/qrCodeGenerator/QrCodeGenerator";
 import ThemeChanger from "./pages/themeChanger/ThemeChanger";
 import ScrollIndicator from "./pages/scrollIndicator/ScrollIndicator";
 import CustomTabs from "./pages/customTabs/CustomTabs";
+import OpenModal from "./pages/openModal/OpenModal";
 
 const App = () => {
   return (
@@ -25,6 +26,7 @@ const App = () => {
           <Route path="/themeChanger" element={<ThemeChanger />} />
           <Route path="/scrollIndicator" element={<ScrollIndicator />} />
           <Route path="/customTabs" element={<CustomTabs />} />
+          <Route path="/openModal" element={<OpenModal />} />
         </Routes>
       </Router>
     </>
