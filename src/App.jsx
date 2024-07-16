@@ -10,6 +10,7 @@ import ThemeChanger from "./pages/themeChanger/ThemeChanger";
 import ScrollIndicator from "./pages/scrollIndicator/ScrollIndicator";
 import CustomTabs from "./pages/customTabs/CustomTabs";
 import OpenModal from "./pages/openModal/OpenModal";
+import GithubFinder from "./pages/githubFinder/GithubFinder";
 
 const App = () => {
   return (
@@ -27,6 +28,7 @@ const App = () => {
           <Route path="/scrollIndicator" element={<ScrollIndicator />} />
           <Route path="/customTabs" element={<CustomTabs />} />
           <Route path="/openModal" element={<OpenModal />} />
+          <Route path="/githubFinder" element={<GithubFinder />} />
         </Routes>
       </Router>
     </>

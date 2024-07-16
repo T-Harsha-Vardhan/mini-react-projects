@@ -16,6 +16,7 @@ const HomePage = () => {
         <Link to="/scrollIndicator">Scroll Indicator</Link>
         <Link to="/customTabs">Custom Tabs</Link>
         <Link to="/openModal">Open Modal</Link>
+        <Link to="/githubFinder">Github Finder</Link>
       </div>
     </div>
   );
